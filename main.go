@@ -16,6 +16,6 @@ func main() {
 	})
 
 	port := "3000"
-	log.Printf("UUID server starting on port %s", port)
+	log.Printf("Short UUID server starting on port %s", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
