@@ -9,6 +9,8 @@ import (
 )
 
 func main() {
+	fmt.Println("=== UUID Server v1.0 ===")
+
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		id := uuid.New()
 		w.Header().Set("Content-Type", "text/plain")
