@@ -12,7 +12,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		id := uuid.New()
 		w.Header().Set("Content-Type", "text/plain")
-		fmt.Fprintf(w, "%s\n", id.String())
+		fmt.Fprintf(w, "%s\n", id.String()[:6])
 	})
 
 	port := "3000"
